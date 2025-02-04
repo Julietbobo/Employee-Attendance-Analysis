@@ -6,7 +6,7 @@ This is an analysis aimed at gaining insights into employees' preference of work
 ![tooltip](https://github.com/user-attachments/assets/5a2a2e18-4ba7-463f-96dc-31f348601eac)
 ![Screenshot (23)](https://github.com/user-attachments/assets/6cdaffe7-a855-44ac-988b-72b8416297b8)
 
-##Table of contents
+## Table of contents
 1. [Data Source](#data-source)
 2. [Tools](#tools)
 3. [Data Preparation](#data-preparation)
