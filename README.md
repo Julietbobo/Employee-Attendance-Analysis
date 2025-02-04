@@ -55,6 +55,11 @@ return workdays-offs
 
 ```%WFH = DIVIDE([WFH], [WorkingDays])```
 
+### Data visualization.
+- For trend analysis by dates I used an area chart which is the most suitable.
+- I used a tooltip in the area chart to gain deeper insights on different reasons for for missing work or employee preferences of working from home or from the office.
+- I also used column charts to see the most absentee employees and the weekdays which employees prefer being at the office or working from home.
+
 ### Findings
 1. Generally there is a higher preference of working from the office to working from home.
 2. Wednesdays have the highest office attendance.
