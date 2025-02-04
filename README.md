@@ -2,6 +2,16 @@
 ### Project over_view.
 This is an analysis aimed at gaining insights into employees' preference of working from home or working from the office, employee absenteeism and the number of paid and sick leaves taken. The aim is to increase productivity, improve employee wellness and resource utilization. 
 
+##Table of contents
+1. [Data Source](#data-source)
+2. [Tools](#tools)
+3. [Data Preparation](#data-preparation)
+4. [Exploratory Data Analysis](#exploratory-data-analysis)
+5. [Assumption](#assumption)
+6. [Data Analysis](#data-analysis)
+7. [Findings](#findings)
+8. [Recommendations](#recommendations)
+
 ### Data Source
 The data is sourced from an excel file obtained from a youtube channel: AttenanceSheet2022.xls for May to June 2022.
 
@@ -10,7 +20,7 @@ The data is sourced from an excel file obtained from a youtube channel: Attenanc
    - Power Query for data cleaning, data wrangling and data transformation.
 - Power Bi - Visualization.
 
-### Data Preparation/Cleaning
+### Data Preparation
 - Change of data typeS
 - Unpivoting columns
 - Replacing values
@@ -31,9 +41,32 @@ The analysis seeks to answer the followng questions:
 ### Data Analysis
 - I created measures to calculate the total working days which is exlusive of holidays, weekly offs and weekends. The total is a summation of the total number of employees (stating whether they are in the office, working from home, absent or on leave).
 - I also created measures to see the rate of office attendance, work from home, absenteeism and leaves.
+- Below are some examples of measures I calculated;
+  
 ```WorkingDays = 
 var workdays = CALCULATE(COUNT('Final Data'[Dates]))
 var offs=   CALCULATE(COUNT('Final Data'[Dates]), FILTER('Final Data', 'Final Data'[Reason] in {"WO","HO"} &&
 'Final Data'[Day] IN {"Sat", "Sun"}))
 return workdays-offs
  ```
+```
+ WFH =CALCULATE(COUNT('Final Data'[Dates]), FILTER('Final Data', 'Final Data'[Reason] = "WFH"))
+```
+
+```%WFH = DIVIDE([WFH], [WorkingDays])```
+
+### Findings
+1. Generally there is a higher preference of working from the office to working from home.
+2. Wednesdays have the highest office attendance.
+3. However, its worth noting that on Monday the percentage of people working from home is the highest.
+4. The highest number recorded of absenteeism due to sickness in a single day is 4 (30th May 2022) which is not a significant figure to cause an alarm.
+5. There are 8 employees who have been absent from work for more than 3 days in a span of 3 months.
+6. From 20th June there was very low attendance whether work from home or from the office.
+
+### Recommendations
+1. Critical office activities like meetings, team lunches etc to be held on Wednesdays where we have the highest office attendance.
+2. Investigate the top 8 absent employees to find out the reason for the high rate of absenteeism.
+3. Check if high absenteeism from June 20th is linked to excessive workload or burnout.
+4. Encourage the employees to go on leave for high productivity and to avoid burnout. 
+5. On the flip side discourage extreme taking of leave days as this causes a workforce gap and low productivity.
+
