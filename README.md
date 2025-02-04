@@ -25,12 +25,12 @@ The data is sourced from an excel file obtained from a youtube channel: Attenanc
 - Power Bi - Visualization.
 
 ### Data Preparation
-- Change of data typeS
+- Change of data types
 - Unpivoting columns
 - Replacing values
 - Creation of functions to reuse the applied steps for each month.
 - Creation of parameters based on the month of the data
-- Data loading
+- Data loading and inspection
 
 ### Exploratory Data Analysis
 The analysis seeks to answer the followng questions:
@@ -43,7 +43,7 @@ The analysis seeks to answer the followng questions:
 - Absenteeism is regarded as abscondment of duty.
 
 ### Data Analysis
-- I created measures to calculate the total working days which is exlusive of holidays, weekly offs and weekends. The total is a summation of the total number of employees (stating whether they are in the office, working from home, absent or on leave).
+- I created measures to calculate the total working days (exlusive of holidays, weekly offs and weekends) which is like a register to show total attendance for all working days. 
 - I also created measures to see the rate of office attendance, work from home, absenteeism and leaves.
 - Below are some examples of measures I calculated;
   
@@ -60,16 +60,16 @@ return workdays-offs
 ```%WFH = DIVIDE([WFH], [WorkingDays])```
 
 ### Data visualization.
-- For trend analysis by dates I used an area chart which is the most suitable.
-- I used a tooltip in the area chart to gain deeper insights on different reasons for for missing work or employee preferences of working from home or from the office.
-- I also used column charts to see the most absentee employees and the weekdays which employees prefer being at the office or working from home.
+- For trend analysis I used an area chart which is the most suitable to show attendance for each day.
+- I used a tooltip in the area chart to gain deeper insights on the different leaves taken, absenteeism and employee preference of working from home or from the office.
+- I also used column charts to see the most absent employees and the weekdays which employees prefer being at the office or working from home.
 - I used an information button to help viewers understand some of the acronyms, THE SCOPE OF THE DATA and how I have calculated some of the measures.
 
 ### Findings
 1. Generally there is a higher preference of working from the office to working from home.
 2. Wednesdays have the highest office attendance.
-3. However, its worth noting that on Monday the percentage of people working from home is the highest.
-4. The highest number recorded of absenteeism due to sickness in a single day is 4 (30th May 2022) which is not a significant figure to cause an alarm.
+3. Its worth noting that on Monday the percentage of people working from home is the highest.
+4. The highest number recorded of absentees due to sickness in a single day is 4 (30th May 2022) which is not a significant figure to cause an alarm.
 5. There are 8 employees who have been absent from work for more than 3 days in a span of 3 months.
 6. From 20th June there was very low attendance whether work from home or from the office.
 
