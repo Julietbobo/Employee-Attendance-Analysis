@@ -25,12 +25,14 @@ The data is sourced from an excel file obtained from a youtube channel: Attenanc
 - Power Bi - Visualization.
 
 ### Data Preparation
+- Data loading and inspection
 - Change of data types
 - Unpivoting columns
 - Replacing values
 - Creation of functions to reuse the applied steps for each month.
 - Creation of parameters based on the month of the data
-- Data loading and inspection
+- Visualization
+
 
 ### Exploratory Data Analysis
 The analysis seeks to answer the followng questions:
@@ -63,7 +65,7 @@ return workdays-offs
 - For trend analysis I used an area chart which is the most suitable to show attendance for each day.
 - I used a tooltip in the area chart to gain deeper insights on the different leaves taken, absenteeism and employee preference of working from home or from the office.
 - I also used column charts to see the most absent employees and the weekdays which employees prefer being at the office or working from home.
-- I used an information button to help viewers understand some of the acronyms, THE SCOPE OF THE DATA and how I have calculated some of the measures.
+- I used an information button to help viewers understand some of the acronyms, the scope of data and how I have calculated some of the measures.
 
 ### Findings
 1. Generally there is a higher preference of working from the office to working from home.
