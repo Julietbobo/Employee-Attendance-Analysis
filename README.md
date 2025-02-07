@@ -1,6 +1,7 @@
 # Employee Attendance Analysis
 ### Project over_view.
 This is an analysis aimed at gaining insights into employees' preference of working from home or working from the office, employee absenteeism and the number of paid and sick leaves taken. The aim is to increase productivity, improve employee wellness and resource utilization. 
+![Screenshot (24)](https://github.com/user-attachments/assets/a2d18c75-efa2-444c-98dd-5c75731dd8b5)
 
 
 ## Table of contents
@@ -60,9 +61,12 @@ return workdays-offs
 
 ### Data visualization.
 - For trend analysis I used an area chart which is the most suitable to show attendance for each day.
-- I used a tooltip in the area chart to gain deeper insights on the different leaves taken, absenteeism and employee preference of working from home or from the office.
 - I also used column charts to see the most absent employees and the weekdays which employees prefer being at the office or working from home.
-- I used an information button to help viewers understand some of the acronyms, the scope of data and how I have calculated some of the measures.
+- I used an information button to help viewers understand some of the acronyms and how I have calculated some of the measures.
+  ![Screenshot (26)](https://github.com/user-attachments/assets/31a4050a-8db5-4efd-a04d-df9fb8f4b0f5)
+
+- From 20th June there was a significant drop in work attendance and so i used a custom tooltip to show the different reasons for low turn up for each day.
+![Screenshot (25)](https://github.com/user-attachments/assets/b5b58c38-ec3b-471e-8bd4-1aa28d657cb0)
 
 ### Findings
 1. Generally there is a higher preference of working from the office to working from home.
