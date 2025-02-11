@@ -15,7 +15,7 @@ This is an analysis aimed at gaining insights into employees' preference of work
 8. [Recommendations](#recommendations)
 
 ### Data Source
-The data is sourced from an excel file obtained from a youtube channel: AttenanceSheet2022.xls for May to June 2022.
+The data is sourced from an excel file obtained from a youtube channel: AttenanceSheet2022.xlsx for May to June 2022.
 
 ### Tools
 - Excel
