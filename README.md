@@ -57,7 +57,7 @@ return workdays-offs
  WFH =CALCULATE(COUNT('Final Data'[Dates]), FILTER('Final Data', 'Final Data'[Reason] = "WFH"))
 ```
 
-```%WFH = DIVIDE([WFH], [WorkingDays])```
+`%WFH = DIVIDE([WFH], [WorkingDays])`
 
 ### Data visualization.
 - For trend analysis I used an area chart which is the most suitable to show attendance for each day.
