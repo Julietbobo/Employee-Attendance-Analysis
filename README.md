@@ -27,8 +27,7 @@ The data is sourced from an excel file obtained from a youtube channel: Attenanc
 - Change of data types
 - Unpivoting columns
 - Replacing values
-- Creation of functions to reuse the applied steps for each month.
-- Creation of parameters based on the month of the data
+- Data modelling by creating relationships between tables
 - Visualization
 
 
